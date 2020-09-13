@@ -2,15 +2,16 @@ import {PlayerListComponent} from "../components/playerList";
 import { connect } from "react-redux";
 import {playerListRequestStartedAction} from "../actions/playerListRequestStarted";
 
-const mapStateToProps = (state: any) => {
+
+const mapStateToProps = (state) => {
     return {
-        playerList: state.playerReducer.playersList
+        players: state.playerReducer.players
     }
 }
 
-const mapDispatchToProps = (dispatch: any) => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        getPlayerList: () => dispatch(playerListRequestStartedAction())
+        loadPlayers: () => dispatch(playerListRequestStartedAction())
     }
 }
 

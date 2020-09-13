@@ -1,4 +1,4 @@
-import {playerReducer} from "./player";
+import {playerReducer} from "./playerReducer";
 import {combineReducers} from 'redux';
 
 

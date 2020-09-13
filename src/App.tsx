@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {PlayerListComponent} from "./components/playerList";
+import {PlayerListContainer} from "./containers/playerListContainer";
 
 function App() {
   //1. Strongly-typed function components props
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Hello who="Mary" />
-      <PlayerListComponent />
+      <PlayerListContainer/>
     </div>
   );
 }

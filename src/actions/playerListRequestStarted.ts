@@ -1,15 +1,13 @@
 import {playerApi} from "../rest-api/player-api";
-import {actionEnums} from "../common/actionEnums";
-import {PlayerEntity} from "../model/player";
-import {playerListRequestCompletedAction} from "./playerListRequestCompleted";
+import {playerRequestCompleted} from "./playerRequestCompleted";
 
 export const playerListRequestStartedAction = () => {
-    return function (dispatcher: (arg0: any) => void) {
+    return function (dispatcher) {
         const promise = playerApi.loadPlayerList();
 
         promise.then(
             data => {
-                dispatcher(playerListRequestCompletedAction(data));
+                dispatcher(playerRequestCompleted(data));
             }
         );
 
