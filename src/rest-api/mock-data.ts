@@ -17,7 +17,7 @@ export const playersMockData: PlayerEntity[] = [
     {id: 77, name: 'Leyer', position: '1', average: 0},
     {id: 22, name: 'Mazza', position: '1', average: 0},
     {id: 54, name: 'Perez', position: '1', average: 0},
-    {id: 77, name: 'Pivetta', position: '1', average: 0},
+    {id: 88, name: 'Pivetta', position: '1', average: 0},
     {id: 57, name: 'Rodriguez', position: '1', average: 0},
     {id: 41, name: 'Sale', position: '1', average: 0},
     {id: 59, name: 'Srpings', position: '1', average: 0},
@@ -46,5 +46,5 @@ export const playersMockData: PlayerEntity[] = [
     {id: 19, name: 'Bradley Jr.', position: '8', average: 255},
     {id: 28, name: 'Martinez', position: 'DH', average: 250},
     {id: 99, name: 'Verdugo', position: '9', average: 429},
-    {id: 39, name: 'Wilson', position: 'OF', average: 0}
+    {id: 69, name: 'Wilson', position: 'OF', average: 0}
 ];

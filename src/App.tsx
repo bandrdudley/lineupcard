@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {PlayerListContainer} from "./containers/playerListContainer";
+import {StarterListContainer} from "./containers/starterListContainer";
 
 function App() {
   //1. Strongly-typed function components props
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Hello who="Mary" />
+      <StarterListContainer/>
       <PlayerListContainer/>
     </div>
   );

@@ -11,6 +11,7 @@ class PlayerApi {
     }
 
     loadPlayerList(): Promise<PlayerEntity[]> {
+        console.log("PlayerApi.loadPlayerList")
         return Promise.resolve(this.playersData);
     }
 }
