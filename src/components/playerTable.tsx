@@ -2,7 +2,6 @@ import * as React from "react";
 import {PlayerHeaderComponent} from "./playerHeader";
 import {PlayerRowComponent} from "./playerRow";
 import {PlayerEntity} from "../model/player";
-import {playersMockData} from "../rest-api/mock-data";
 
 interface Props {
     players: PlayerEntity[];
@@ -11,6 +10,7 @@ interface Props {
 export const PlayerTableComponent = (props: Props) => {
     let returnedArray: PlayerEntity[];
     returnedArray = props.players
+    console.log(returnedArray)
     return (
         <table className="table">
             <PlayerHeaderComponent/>
